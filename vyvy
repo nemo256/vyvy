@@ -16,7 +16,7 @@ function logo() {
     local text=$1
     local screen_width=$(tput cols)
     
-    # Giant VYVY ASCII Art
+    # VYVY ASCII Art
     local vyvy_art="
 ██╗   ██╗██╗   ██╗██╗   ██╗██╗   ██╗
 ╚██╗ ██╔╝╚██╗ ██╔╝╚██╗ ██╔╝╚██╗ ██╔╝
@@ -25,21 +25,22 @@ function logo() {
    ██║      ██║      ██║      ██║   
    ╚═╝      ╚═╝      ╚═╝      ╚═╝   
 "
-    
+    local logo_width=$(echo "$vyvy_art" | awk '{ if (length > max) max = length } END { print max }')
+
     clear
     tput setaf 6  # Cyan
-    printf "\n%*s\n" $((($screen_width - 48) / 2)) ""
+    printf "\n"
     while IFS= read -r line; do
-        printf "%*s${line}\n" $((($screen_width - 48) / 2)) ""
+        printf "%*s\n" $((($screen_width + ${#line}) / 2)) "$line"
     done <<< "$vyvy_art"
     
     tput setaf 5  # Magenta
-    printf "\n%*s${text}\n\n" $((($screen_width - ${#text}) / 2)) ""
-    tput bold
+    printf "\n%*s\n\n" $((($screen_width + ${#text}) / 2)) "$text"
+    tput sgr0
 }
 
-logo "VYVY System Configuration Engine"
-sleep 2
+logo "VYVY Void Linux Configuration System"
+read -p "Press any key to continue..."
 
 # Information gathering
 prompt "Shell" SHELL /bin/bash
@@ -49,35 +50,114 @@ prompt "IRSSI username" IRSSI_USERNAME "None"
 prompt "IRSSI password" IRSSI_PASSWORD "None"
 prompt "Github token (optional)" TOKEN "None"
 
+if [[ ! -f "packages" ]]; then
+  logo "Error: packages file not found!"
+  exit 1
+fi
+
 logo "Updating Void Linux..."
 sudo xbps-install -Syuv
 
 logo "Installing Base Packages..."
-sudo xbps-install -Syv $(cat packages)
+while read package; do
+  [[ -z "$package" || "$package" =~ ^# ]] && continue
+  logo "Installing: $package..."
+  sudo xbps-install -Sy "$package"
+done < packages
 
-logo "Configuring System Settings..."
+logo "Configuring System..."
 sudo chsh -s ${SHELL} root
 sudo chsh -s ${SHELL} ${USER}
-echo -ne "KEYMAP=\"$KEYMAP\"\nFONT=\"$CONSOLE_FONT\"\n" | sudo tee /etc/vconsole.conf
+echo -e "KEYMAP=\"$KEYMAP\"\nFONT=\"$CONSOLE_FONT\"" | sudo tee /etc/vconsole.conf
 echo "${USER} ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/10-nopasswd
 
-logo "Configuring Services..."
+logo "Configuring Hardware..."
+# USB sound notifications
+sudo tee /etc/udev/rules.d/99-usb-sound.rules >/dev/null <<EOF
+KERNEL=="sd*", SUBSYSTEM=="block", ENV{DEVTYPE}=="partition", ACTION=="add", ENV{ID_FS_TYPE}!="vfat", RUN+="/bin/aplay $HOME/bin/sound/yamete.wav"
+KERNEL=="sd*", SUBSYSTEM=="block", ENV{DEVTYPE}=="partition", ACTION=="remove", ENV{ID_FS_TYPE}!="vfat", RUN+="/bin/aplay $HOME/bin/sound/ahh.wav"
+EOF
+sudo udevadm control --reload-rules
+
+# Intel graphics configuration
+sudo tee /etc/X11/xorg.conf.d/20-intel.conf >/dev/null <<EOF
+Section "Device"
+  Identifier "Intel Graphics"
+  Driver "intel"
+  Option "TearFree" "true"
+EndSection
+EOF
+
+# Touchpad configuration
+sudo tee /etc/X11/xorg.conf.d/40-libinput.conf >/dev/null <<EOF
+Section "InputClass"
+    Identifier "libinput touchpad"
+    MatchIsTouchpad "on"
+    Option "Tapping" "True"
+    Option "TappingDrag" "True"
+    Option "ScrollMethod" "twofinger"
+    Option "NaturalScrolling" "False"
+EndSection
+EOF
+
+logo "Setting Up Services..."
 sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/docker /var/service/
 sudo ln -s /etc/sv/ly /var/service/
 
-logo "Installing Performance Tweaks..."
-sudo mkdir -p /etc/sv/disable_prochot
-sudo tee /etc/sv/disable_prochot/run <<'EOF'
+# Slock service
+sudo tee /etc/sv/slock/run <<EOF
 #!/bin/sh
-exec wrmsr 0x1FC 2
+exec slock
 EOF
-sudo chmod +x /etc/sv/disable_prochot/run
-sudo ln -s /etc/sv/disable_prochot /var/service/
+sudo chmod +x /etc/sv/slock/run
+sudo ln -s /etc/sv/slock /var/service/
 
-logo "Finalizing Configuration..."
-sudo xbps-install -Syv noto-fonts-ttf noto-fonts-cjk noto-fonts-emoji
+logo "Git Configuration..."
+if [ "$TOKEN" != "None" ]; then
+  echo "https://nemo256:${TOKEN}@github.com" > $HOME/.git-credentials
+  git config --global credential.helper store
+fi
+
+logo "Installing Fonts..."
+sudo xbps-install -Syv noto-fonts-ttf noto-fonts-emoji
+sudo curl -fLo "/usr/share/fonts/Fira Code Bold Nerd Font Complete.ttf" \
+  https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/FiraCode/Bold/complete/Fira%20Code%20Bold%20Nerd%20Font%20Complete.ttf
 sudo fc-cache -fv
+
+logo "Building Custom Software..."
+mkdir -p $HOME/.build
+cd $HOME/.build
+
+repos=(
+  "https://github.com/nemo256/tily"
+  "https://github.com/nemo256/st"
+  "https://github.com/nemo256/dmenu"
+  "https://github.com/nemo256/slock"
+  "https://github.com/nemo256/slstatus"
+  "https://github.com/nemo256/fetchy"
+  "https://github.com/pystardust/ani-cli"
+  "https://github.com/xorg62/tty-clock"
+  "https://github.com/muquit/grabc"
+)
+
+for repo in "${repos[@]}"; do
+  dir=$(basename $repo)
+  [[ ! -d $dir ]] && git clone $repo
+  cd $dir
+  sudo make clean install
+  cd ..
+done
+
+logo "Configuring Neovim..."
+git clone https://github.com/nemo256/vimy $HOME/.config/nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim \
+  $HOME/.local/share/nvim/site/pack/packer/start/packer.nvim
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+
+logo "Final Configuration..."
+mkdir -p $HOME/{dl,vids,work,.config}
+rm -rf $HOME/.bash* $HOME/.gitconfig
 
 logo "VYVY Configuration Complete!"
 echo "Reboot your system to apply all changes"

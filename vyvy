@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+
+# Prompt function
+function prompt {
+    local message=$1
+    local variable=$2
+    local default=$3
+    tput setaf 15
+    read -p "${message} (default: ${default}): " value
+    tput sgr0
+    eval $variable=${value:-$default}
+}
+
+# VYVY logo with colors
+function logo() {
+    local text=$1
+    local screen_width=$(tput cols)
+    
+    # Giant VYVY ASCII Art
+    local vyvy_art="
+██╗   ██╗██╗   ██╗██╗   ██╗██╗   ██╗
+╚██╗ ██╔╝╚██╗ ██╔╝╚██╗ ██╔╝╚██╗ ██╔╝
+ ╚████╔╝  ╚████╔╝  ╚████╔╝  ╚████╔╝ 
+  ╚██╔╝    ╚██╔╝    ╚██╔╝    ╚██╔╝  
+   ██║      ██║      ██║      ██║   
+   ╚═╝      ╚═╝      ╚═╝      ╚═╝   
+"
+    
+    clear
+    tput setaf 6  # Cyan
+    printf "\n%*s\n" $((($screen_width - 48) / 2)) ""
+    while IFS= read -r line; do
+        printf "%*s${line}\n" $((($screen_width - 48) / 2)) ""
+    done <<< "$vyvy_art"
+    
+    tput setaf 5  # Magenta
+    printf "\n%*s${text}\n\n" $((($screen_width - ${#text}) / 2)) ""
+    tput bold
+}
+
+logo "VYVY System Configuration Engine"
+sleep 2
+
+# Information gathering
+prompt "Shell" SHELL /bin/bash
+prompt "Keymap" KEYMAP us
+prompt "Console font" CONSOLE_FONT ter-132b
+prompt "IRSSI username" IRSSI_USERNAME "None"
+prompt "IRSSI password" IRSSI_PASSWORD "None"
+prompt "Github token (optional)" TOKEN "None"
+
+logo "Updating Void Linux..."
+sudo xbps-install -Syuv
+
+logo "Installing Base Packages..."
+sudo xbps-install -Syv $(cat packages)
+
+logo "Configuring System Settings..."
+sudo chsh -s ${SHELL} root
+sudo chsh -s ${SHELL} ${USER}
+echo -ne "KEYMAP=\"$KEYMAP\"\nFONT=\"$CONSOLE_FONT\"\n" | sudo tee /etc/vconsole.conf
+echo "${USER} ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/10-nopasswd
+
+logo "Configuring Services..."
+sudo ln -s /etc/sv/bluetoothd /var/service/
+sudo ln -s /etc/sv/docker /var/service/
+sudo ln -s /etc/sv/ly /var/service/
+
+logo "Installing Performance Tweaks..."
+sudo mkdir -p /etc/sv/disable_prochot
+sudo tee /etc/sv/disable_prochot/run <<'EOF'
+#!/bin/sh
+exec wrmsr 0x1FC 2
+EOF
+sudo chmod +x /etc/sv/disable_prochot/run
+sudo ln -s /etc/sv/disable_prochot /var/service/
+
+logo "Finalizing Configuration..."
+sudo xbps-install -Syv noto-fonts-ttf noto-fonts-cjk noto-fonts-emoji
+sudo fc-cache -fv
+
+logo "VYVY Configuration Complete!"
+echo "Reboot your system to apply all changes"

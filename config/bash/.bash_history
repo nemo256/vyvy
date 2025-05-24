@@ -129430,1645 +129430,1898 @@ gca update bashrc
 clear
 #1745140337
 q
-#1745740153
+#1747067894
+ins ttf-fira-code
+#1747067896
+q
+#1747067828
 cd dots
-#1745740154
+#1747067828
 ls
-#1745740183
-grh 9e29d3413520a7a495c38a51416a29d39612145c
-#1745740211
-git reset HARD 9e29d3413520a7a495c38a51416a29d39612145c
-#1745740220
-git reset --hard 9e29d3413520a7a495c38a51416a29d39612145c
-#1745740226
+#1747067829
 gst
-#1745740231
-gst -u
-#1745740258
-gca MILESTONE - Arch
-#1745740276
-git push origin master --force
-#1745740279
-clear
-#1745740294
-..
-#1745740299
-q
-#1745740321
-cdw
-#1745740446
-new deby
-#1745740457
-cd deby/
-#1745740458
-ls
-#1745740458
-r
-#1745740495
-gst
-#1745740504
-gca update boilerplate files!
-#1745741242
-ls
-#1745741243
-r
-#1745741248
-nvim deby
-#1745741255
-chmod +x deby 
-#1745741256
-ls
-#1745741283
-nvim disable_prochot.service
-#1745741308
-nvim packages
-#1745741327
-nvim README.md
-#1745741740
-r
-#1745742745
-q
-#1745760363
-cdw
-#1745760366
-cd stp-api
-#1745760371
-make
-#1745760352
-sudo systemctl stop oracle-xe
-#1745760359
-sudo systemctl start oracle-xe
-#1745760330
-cdw
-#1745760332
-cd stp
-#1745760332
-make
-#1745740559
-cd dots
-#1745740559
-ls
-#1745740560
-r
-#1745742707
-ls
-#1745742713
-r
-#1745742741
-gst
-#1745742751
-gst -u
-#1745742781
-gca import old arch after install script with new deby script!
-#1745757994
-r
-#1745760075
-gst
-#1745760085
-gca only necessary packages!
-#1745761032
-clear
-#1745761032
-ls
-#1745765015
-clear
-#1745765015
-q
-#1745765019
-cdw
-#1745765020
-cd deby
-#1745765021
-ls
-#1745765022
-gst
-#1745775112
-ls
-#1745775272
-r
-#1745776412
-gca testing without vim and irssi
-#1745776451
-r
-#1745777051
-gca testing without vim and irssi
-#1745777337
-r
-#1745777355
-gca update script with minimal logging!
-#1745777748
-r
-#1745777782
-gca fix logs and update error handling!
-#1745777985
-r
-#1745778371
-gca fix tily configuration!
-#1745779278
-r
-#1745779316
-gst
-#1745779326
-gca fix logs and update error handling!
-#1745779500
-r
-#1745779577
-gca remove unnecessary packages for testing!
-#1745779665
-r
-#1745779901
-gca skip instead of stopping!
-#1745779911
-r
-#1745779919
-gst
-#1745779924
-gca update packages
-#1745780110
-r
-#1745780125
-gst
-#1745780129
-gca update packages
-#1745780779
-r
-#1745780803
-gca skip some packages for testing!
-#1745781279
-nvim deby 
-#1745781296
-r
-#1745781310
-gca testing on VM
-#1745781444
-r
-#1745781500
-gca disable wals for testing!
-#1745781683
-ls
-#1745781683
-r
-#1745781976
-gca testing on debian VM
-#1745782398
-r
-#1745782425
-gca testing on debian VM
-#1745782508
-r
-#1745782518
-gca testing on debian VM
-#1745782615
-r
-#1745782629
-gca testing on debian VM
-#1745783075
-upd
-#1745783164
-nvim deby 
-#1745783186
-r
-#1745783199
-gca testing on debian VM
-#1745783303
-r
-#1745783483
-gca testing on debian VM
-#1745785118
-r
-#1745785141
-gca testing on debian VM
-#1745786001
-nvim deby 
-#1745786013
-nvim packages 
-#1745786022
-gca testing on debian VM
-#1745786350
-clear
-#1745786351
-ls
-#1745786412
-cdd
-#1745786413
-ls
-#1745786413
-r
-#1745798449
-clear
-#1745798450
-ls
-#1745798451
-q
-#1745826114
-cdw
-#1745826118
-cd stp-api
-#1745826121
-sudo systemctl start oracle-xe
-#1745826146
-make
-#1745826111
-cdw
-#1745826112
-cd stp
-#1745826113
-make
-#1745834183
-clear
-#1745834183
-q
-#1745834197
-cd stp-api
-#1745834199
-cdw
-#1745834203
-cd stp-api/
-#1745834206
-sudo systemctl start oracle-xe
-#1745834227
-make
-#1745834188
-cdw
-#1745834189
-cd stp
-#1745834190
-make
-#1745843573
-cdw
-#1745843574
-cd stp-api
-#1745843575
-ls
-#1745843579
-sudo systemctl start oracle-xe
-#1745843600
-clear
-#1745843600
-ls
-#1745843650
-make
-#1745843561
-cdw
-#1745843561
-ls
-#1745843563
-cd stp
-#1745843563
-ls
-#1745843564
-make
-#1745844311
-q
-#1745844308
-sudo systemctl stop oracle-xe
-#1745844372
-sudo systemctl start oracle-xe
-#1745844415
-cdw
-#1745844416
-cd stp-api
-#1745844417
-make
-#1745844410
-cdw
-#1745844411
-cd stp
-#1745844412
-make
-#1745850331
-..
-#1745850333
-cd nadine
-#1745850337
-cd NADINE/
-#1745850337
-ls
-#1745850341
-node server.js 
-#1745851863
-ls
-#1745851866
-clear
-#1745851867
-ls
-#1745860710
-clear
-#1745860711
-q
-#1745862780
-sudo pacman -S --conflicts
-#1745863297
-space
-#1745863374
-q
-#1745863381
-upd
-#1745863391
-q
-#1745865710
-r
-#1745865777
-space
-#1745865786
-r
-#1745865799
-space
-#1745865802
-q
-#1745867252
-df -h /
-#1745867257
-r
-#1745867305
-q
-#1745862054
-ncmpcpp
-#1745862058
-mpv
-#1745868984
-clear
-#1745868985
-ls
-#1745868986
-q
-#1745868994
-xrc
-#1745869021
-ins mpd
-#1745869035
-mpd &
-#1745869054
-ins wildmidi
-#1745869059
-reboot
-#1745869124
-mpd
-#1745869138
-sudo systemctl stop mpd
-#1745869144
-killall mpd
-#1745869146
-mpd
-#1745869185
-killall mpd
-#1745869186
-mpd
-#1745869237
-transmission-cli 
-#1745869242
-transmission-
-#1745869243
-transmission
-#1745869252
-q
-#1745869163
-cd .config/mpd/
-#1745869164
-ls
-#1745869178
-touch playlist
-#1745869253
-cd
-#1745869256
-cd .build/
-#1745869258
-cd tily/
-#1745869259
-ls
-#1745869262
-nvim config.h
-#1745869953
-alias upd
-#1745869955
-q
-#1745870021
-ncmpcpp
-#1745870031
-r
-#1745870170
-q
-#1745870172
-clear
-#1745870172
-q
-#1745870174
-clear
-#1745870174
-q
-#1745870176
-nvim
-#1745870182
-ins neovim
-#1745870185
-q
-#1745869302
-fc-cache -fv
-#1745869319
-ls
-#1745869324
-cd .build/
-#1745869326
-cd tily/
-#1745869329
-nvim config.h
-#1745869346
-tremc
-#1745869358
-ins tremc
-#1745869362
-paru -S tremc
-#1745869409
-systemctl status transmission-daemon
-#1745869427
-ins transmission
-#1745869438
-ins transmission-daemon
-#1745869450
-transmission-show
-#1745869477
-xrc
-#1745869490
-transmission-daemon
-#1745869494
-tremc
-#1745869537
-transmission-daemon
-#1745869539
-tremc
-#1745869547
-ins transmission-daemon
-#1745869549
-ins transmission-da
-#1745869562
-ps aux | grep transmission-daemon
-#1745869598
-pacman -Ss transmission
-#1745869631
-transmission-cli
-#1745869664
-pacman -Ss transmission
-#1745869689
-pkill -f transmission-daemon
-#1745869695
-sudo systemctl enable --now transmission-daemon.service
-#1745869713
-sudo pacman -S --force transmission-cli
-#1745869717
-sudo pacman -S transmission-cli
-#1745869726
-sudo systemctl enable --now transmission-daemon.service
-#1745869733
-sudo nano /etc/systemd/system/transmission-daemon.service
-#1745869788
-which transmission-daemon
-#1745869794
-transmission-daemon
-#1745869798
-tremc
-#1745869863
-sudo netstat -tulnp | grep 9091
-#1745869868
-sudo ss -tulnp | grep 9091
-#1745869885
-paru -S tremc
-#1745869944
-sudo pacman -Syyu
-#1745870351
-upd
-#1745870358
-paru -S tremc
-#1745870439
-cd
-#1745870443
-git clone https://aur.archlinux.org/paru.git
-#1745870448
-cd paru/
-#1745870448
-ls
-#1745870453
-makepkg -si
-#1745870534
-rem paru
-#1745870538
-sudo pacman -Rns paru
-#1745870545
-makepkg -si
-#1745870810
-clear
-#1745870811
-ls
-#1745870820
-q
-#1745870829
-ins neovim
-#1745870931
-q
-#1745870997
-fc-cache -fv
-#1745871042
-clear
-#1745871042
-q
-#1745871062
-clear
-#1745871062
-q
-#1745871090
-cdw
-#1745871094
-sudo systemctl start oracle-xe
-#1745871139
-cdw
-#1745871141
-cd stp-api/
-#1745871141
-make
-#1745871314
-clear
-#1745871318
-make stop
-#1745871321
-make clean
-#1745871324
-q
-#1745871063
-cdw
-#1745871064
-cd stp
-#1745871064
-make
-#1745871187
-arem
-#1745871199
-make
-#1745871329
-make clean
-#1745871353
-clear
-#1745871354
-q
-#1745871684
-sudo mkdir /mnt/iphone
-#1745871697
-sudo mkdir iphone
-#1745871706
-sudo ifuse iphone
-#1745871709
-ins ifuse
-#1745871824
-clear
-#1745871824
-q
-#1745871947
-cdm
-#1745871947
-ls
-#1745871950
-r
-#1745917106
-cdw
-#1745917108
-cd stp-api
-#1745917113
-sudo systemctl start oracle-xe
-#1745917209
-make
-#1745917086
-cdw
-#1745917095
-cd stp
-#1745917096
-make
-#1745938850
-clear
-#1745938851
-q
-#1745938852
-clear
-#1745938852
-q
-#1745997720
-sudo systemctl start oracle-xe
-#1745997754
-cdw
-#1745997756
-cd stp-api
-#1745997757
-make
-#1745997715
-cdw
-#1745997717
-cd stp
-#1745997717
-make
-#1745997765
-cdw
-#1745997767
-cd stp
-#1745997767
-ls
-#1746179436
-sudo systemctl start oracle-xe
-#1746179471
-cdw
-#1746179474
-cd stp-api/
-#1746179474
-ls
-#1746179475
-make
-#1746179479
-cdw
-#1746179480
-cd stp
-#1746179481
-ls
-#1746179159
-cdw
-#1746179160
-cd stp
-#1746179161
-ls
-#1746179166
-touch TODO.md
-#1746179383
-gst
-#1746179390
-gd
-#1746179398
-gst
-#1746179409
-git add TODO.md 
-#1746179422
-gc "Add TODO.md"
-#1746179426
-gpm
-#1746179429
-gst
-#1746179433
-make
-#1746181453
-clear
-#1746181453
-q
-#1746199203
-cdw
-#1746199205
-cd stp
-#1746199205
-ls
-#1746199221
-q
-#1746199262
-ls
-#1746199266
-q
-#1746199269
-ls
-#1746199272
-nvim prompt.ai 
-#1746199298
-q
-#1746199596
-cdw
-#1746199597
-ls
-#1746199598
-r
-#1746199758
-ls
-#1746199760
-make
-#1746199845
-make stop
-#1746199846
-r
-#1746199914
-q
-#1746181462
-sudo systemctl start oracle-xe
-#1746199208
-cdw
-#1746199210
-cd stp-api
-#1746199211
-ls
-#1746199212
-make
-#1746200446
-make stop
-#1746200448
-make clean
-#1746200461
-gca add prestation minimal route!
-#1746200464
-make
-#1746201430
-make stop
-#1746201431
-make clean
-#1746201443
-gca add etablissement by prestation route!
-#1746201445
-clear
-#1746201446
-ls
-#1746201447
-make
-#1746202744
-r
-#1746202775
-bg
-#1746202776
-fg
-#1746202818
-..
-#1746202818
-ls
-#1746202822
-q
-#1746202825
-cdw
-#1746202830
-cd stp-api
-#1746202830
-ls
-#1746202832
-make
-#1746202892
-make stop
-#1746202893
-r
-#1746203249
-make
-#1746203649
-make stop
-#1746203650
-r
-#1746203756
-..
-#1746203757
-make
-#1746203889
-make stop
-#1746203890
-r
-#1746204647
-make
-#1746204808
-r
-#1746204810
-nvim 
-#1746210854
-r
-#1746211048
-..
-#1746211049
-r
-#1746211067
-./create 
-#1746211071
-r
-#1746211536
-q
-#1746201501
-cdw
-#1746201502
-cd stp
-#1746201502
-ls
-#1746201513
-r
-#1746201852
-..
-#1746201853
-ls
-#1746201855
-gst
-#1746201858
-gd
-#1746202724
-gst
-#1746206091
-cdw
-#1746206093
-cd stp-api
-#1746206094
-ls
-#1746206095
-make
-#1746206994
-gst
-#1746207014
-gca fix some minor bugs with etablissement search by prestation! 
-#1746207019
-make
-#1746211538
-make stop
-#1746211539
-make clean
-#1746211540
-gst
-#1746211544
-gca fix some minor bugs with etablissement search by prestation! 
-#1746211546
-make
-#1746213441
-make clean
-#1746213443
-q
-#1746199924
-sqlcl aslstp@127.0.0.1:1521/XE
-#1746181455
-cdw
-#1746181458
-cd stp
-#1746181458
-ls
-#1746181459
-make
-#1746206733
-gst
-#1746206750
-git add src/components/Card/CardContainer.vue src/components/Card/DetailCard.vue src/components/Modal/Modal.vue src/components/Modal/ModalBody.vue
-#1746206751
-gst
-#1746206763
-git add src/components/PrsCharges/PrsChargeDetails.vue
-#1746206779
-gc fix some minor bugs
-#1746206785
-gc 'fix some minor bugs'
-#1746206787
-gpm
-#1746206858
-make
-#1746211549
-gst
-#1746211552
-r
-#1746211576
-gst
-#1746211591
-gca swap etablissement and prestation input search fields!
-#1746211594
-clear
-#1746211595
-ls
-#1746211597
-make
-#1746212504
-gst
-#1746212519
-gca add auto show list for beneficiaire and etablissement
-#1746212521
-clear
-#1746212522
-make
-#1746213431
-sudo systemctl stop oracle-xe
-#1746345709
-cdw
-#1746345710
-cd stp
-#1746345712
-ls
-#1746345713
-sl
-#1746345714
-q
-#1746345722
-cdw
-#1746345737
-cd stp
-#1746345739
-cdw
-#1746345741
-cd stp-api
-#1746345742
-ls
-#1746345749
-sudo systemctl start oracle-xe
-#1746346221
-make
-#1746345714
-cdw
-#1746345715
-cd stp
-#1746345716
-ls
-#1746345719
-make
-#1746346599
-cdw
-#1746346601
-cd stp-api
-#1746346603
-sudo systemctl start oracle-xe
-#1746347998
-make
-#1746350775
-cdw
-#1746351558
-cd stp-api
-#1746351558
-make
-#1746354599
-make stop
-#1746354611
-clear
-#1746354611
-q
-#1746354725
-space
-#1746354766
-cd .cache/
-#1746354766
-ls
-#1746354767
-r
-#1746354778
-q
-#1746354780
-ls
-#1746354784
-clear
-#1746354784
-ls
-#1746354785
-q
-#1746354867
-r
-#1746354870
-q
-#1746354789
-cd /
-#1746354794
-sudo space
-#1746354797
-space
-#1746354927
-q
-#1746361419
-cdw
-#1746361420
-cd stp
-#1746361420
-ls
-#1746361422
-gst
-#1746361423
-gst -u
-#1746362854
-r
-#1746363426
-q
-#1746363429
-cdw
-#1746363430
-cd stp
-#1746363430
-ls
-#1746363433
-gst
-#1746363462
-gca center form input for prise en charge creation! 
-#1746365558
-q
-#1746346592
-cdw
-#1746346594
-cd stp
-#1746346595
-make
-#1746365561
-q
-#1746354613
-cdw
-#1746354616
-cd stp-api
-#1746354617
-ls
-#1746354712
-ncdu
-#1746354717
-space
-#1746359565
-make
-#1746361393
-gst
-#1746361414
-gca add duplicata after first edition!
-#1746361417
-make
-#1746365563
-make stop
-#1746365564
-make clean
-#1746365565
-q
-#1746365574
-cdw
-#1746365575
-cd stp
-#1746365575
-ls
-#1746365576
-gst
-#1746365577
-q
-#1746365578
-cdw
-#1746365580
-cd stp-api
-#1746365582
-gst
-#1746365586
-gst -u
-#1746365586
-q
-#1746365568
-sudo systemctl stop oracle-xe
-#1746365626
-q
-#1746365922
-nvim authorized_websites
-#1746365939
-rm authorized_websites 
-#1746365940
-c;ear
-#1746365942
-clear
-#1746365942
-ls
-#1746365943
-q
-#1746365956
-ufw
-#1746365959
-ins ufw
-#1746365963
-clear
-#1746365966
-rem ufw
-#1746365969
-q
-#1746365629
-lsblk
-#1746365635
-ls usb
-#1746365637
-ls
-#1746365643
-lsblk
-#1746365659
-sudo mount /dev/sdc1 usb/
-#1746365661
-ls usb
-#1746365676
-cdw
-#1746365686
-mkdir RADIA_MAZARI
-#1746365722
-sudo cp -fvr ../usb/CONVENTIONS\ D\'HOTELLERIE\ 2025/ RADIA_MAZARI/
-#1746365741
-cd
-#1746365750
-sudo umount usb/
-#1746365756
-sudo eject /dev/sdc
-#1746365763
-r
-#1746365972
-q
-#1746365977
-sudo iptables -L
-#1746366004
-q
-#1746369618
-cdw
-#1746369620
-cd stp
-#1746369621
-make
-#1746369720
-q
-#1746370142
-cdw
-#1746370144
-cd stp-api
-#1746370150
-sudo systemctl start oracle-xe
-#1746370174
-make
-#1746521581
-cdd
-#1746521582
-ls
-#1746521583
-r
-#1746521681
-cd
-#1746521687
-lsblk
-#1746521695
-sudo mount /dev/sdc1 usb/
-#1746521697
-cd usb/
-#1746521698
-ls
-#1746521705
-cdd
-#1746521706
-;s
-#1746521707
-ls
-#1746521713
-sudo cp -fvr AUGH.wav ../usb/
-#1746521724
-sudo umount /dev/sdc
-#1746521725
-sudo umount /dev/sdc1
-#1746521733
-sudo eject /dev/sdc
-#1746539319
-r
-#1746539334
-cd
-#1746539342
-lsblk
-#1746539348
-sudo mount /dev/sdc1 usb/
-#1746539352
-cd usb/
-#1746539353
-ls
-#1746539355
-cdd
-#1746539356
-ls
-#1746539369
-sudo cp -fvr AUGH_NEW.wav ../usb/
-#1746539378
-sudo umount /dev/sdc
-#1746539380
-sudo umount /dev/sdc1
-#1746539384
-sudo eject /dev/sdc
-#1746541396
-ls
-#1746541401
-cd
-#1746541407
-sudo mount /dev/sdc1 usb/
-#1746541408
-cd usb/
-#1746541410
-ls
-#1746541416
-cd boot/grub/
-#1746541416
-ls
-#1746541419
-nvim grub.cfg 
-#1746541425
-sudo nvim grub.cfg 
-#1746541610
-cd -- sounds
-#1746541612
-cd
-#1746541620
-sudo umount /dev/sdc
-#1746541622
-sudo umount /dev/sdc1
-#1746541628
-sudo eject /dev/sdc
-#1746541887
-sudo mount /dev/sdc1 usb/
-#1746541890
-cd usb
-#1746541890
-ls
-#1746541892
-r
-#1746541902
-sudo nvim grub.cfg 
-#1746542000
-nvim grub.cfg 
-#1746542212
-sudo nvim grub.cfg 
-#1746542229
-cd
-#1746542233
-sudo umount /dev/sdc1
-#1746542243
-sudo eject /dev/sdc
-#1746543345
-clear
-#1746543345
-ls
-#1746543345
-q
-#1746601086
-lsblk
-#1746601091
-sudo mount /dev/sdc1 usb/
-#1746601093
-cd usb
-#1746601093
-ls
-#1746601107
-sudo cp -fvr RADIA/ ../work/RADIA_MAZARI/
-#1746601120
-clear
-#1746601120
-sl
-#1746601121
-ls
-#1746601121
-clear
-#1746601122
-ls
-#1746601123
-cd
-#1746601124
-cdw
-#1746601124
-s
-#1746601125
-ls
-#1746601127
-cd RADIA_MAZARI/
-#1746601127
-ls
-#1746601129
-r
-#1746601134
-q
-#1746601137
-sudo umount /dev/sdc1
-#1746610756
-libreoffice
-#1746610893
-sudo mount /dev/sdc1 usb/
-#1746610911
-sudo cp -fvr ./work/RADIA_MAZARI/CENTRE.ods usb/
-#1746610921
-sudo umount /dev/sdc1
-#1746610924
-sudo eject /dev/sdc
-#1746611620
-q
-#1746611727
-sudo systemctl start oracle-xe
-#1746611761
-cdw
-#1746611764
-cd stp-api
-#1746611765
-make
-#1746611773
-cdw
-#1746611773
-cd stp
-#1746611774
-ls
-#1746612346
-r
-#1746622002
-..
-#1746622002
-...
-#1746622003
-..
-#1746622004
-ls
-#1746622006
-gst
-#1746622009
+#1747067837
 grh
-#1746622011
-clear
-#1746622011
-q
-#1746611720
-cdw
-#1746611721
-cd stp
-#1746611722
-ls
-#1746611724
-make
-#1746711063
-hollywood
-#1746711068
-ins hollywood
-#1746711071
-paru 
-#1746711075
-hack]
-#1746711076
-hack
-#1746711080
-pipes
-#1746711089
-cdb
-#1746711090
-ls
-#1746711090
+#1747067839
 r
-#1746711105
-clear; sexy | lolcat
-#1746711117
-clear; wolf | lolcat
-#1746711126
-clear; colors | lolcat
-#1746711129
-clear
-#1746711130
-ls
-#1746711130
-r
-#1746711134
-cross
-#1746711138
-ls
-#1746711142
-piratesflag 
-#1746711145
-piratesflag  | lolcat
-#1746711148
-ls
-#1746711157
-screamingwolf 
-#1746711164
-clear
-#1746711165
-ls
-#1746711174
-handcuffs | lolcat 
-#1746711319
-ins pipes
-#1746711321
-ins pipe
-#1746711325
-ins pipejs
-#1746711334
-pacman -Q | grep pipe
-#1746711340
-pacman -Q | grep pip
-#1746711459
-weatherbar 
-#1746711475
-cdb
-#1746711475
-ls
-#1746711475
-r
-#1746711496
+#1747068344
+tremc
+#1747068359
+killall transmission
+#1747068361
+xrc
+#1747068368
+killall transmission-daemon
+#1747068374
+transmission-daemon
+#1747068387
 ..
-#1746711500
-cd .config/
-#1746711500
-ls
-#1746711503
-nvim weather.json 
-#1746711531
-q
-#1746714939
-cd usb
-#1746714939
-ls
-#1746714945
-sudo rm -fvr CENTRE.ods 
-#1746714947
-q
-#1746712539
-libreoffice 
-#1746712683
-lsblk
-#1746712699
-sudo mount /dev/sdc1 usb/
-#1746712723
-sudo cp work/RADIA_MAZARI/OUEST* ./usb/
-#1746712727
-ls usb/
-#1746712739
-sudo umount /dev/sdc1
-#1746712743
-sudo eject /dev/sdc
-#1746712744
-clear
-#1746713103
+#1747068387
 r
-#1746714909
-..
-#1746714913
-sudo mount /dev/sdc1 usb/
-#1746714948
-sudo cp -fvr work/RADIA_MAZARI/CENTRE.ods usb/
-#1746714953
-sudo umount /dev/sdc1
-#1746714956
-sudo eject /dev/sdc
-#1746715773
+#1747068393
+gst
+#1747067906
+ins ttf-nerd-fonts-symbols-2048-em
+#1747067912
+ins ttf-nerd-fonts-symbols-2048
+#1747067921
+pacman -Qs ttf-nerd
+#1747067923
+pacman -Qs ttf
+#1747068164
+paru protonvpn
+#1747068661
+dunst
+#1747068773
+drc
+#1747068775
 r
-#1746715819
-cd
-#1746715826
-sudo mount /dev/sdc1 usb/
-#1746715860
-sudo cp -fvr work/RADIA_MAZARI/OUEST_PRIX.ods ./usb/
-#1746715866
-sudo umoun
-#1746715868
-sudo umount /dev/sdc1
-#1746715874
-sudo eject /dev/sdc
-#1746716051
+#1747068801
+dunst
+#1747068812
+killall dunst
+#1747068814
+dunst
+#1747068822
+dunst &
+#1747068823
+q
+#1747481584
+clea
+#1747481584
+q
+#1747481587
 clear
-#1746716051
+#1747481587
 q
-#1746716054
+#1747481612
+clea
+#1747481613
 clear
-#1746716054
+#1747481614
 q
-#1746716055
-c
-#1746716056
-e
-#1746716056
-q
-#1746716057
-e
-#1746716058
-q
-#1746730456
+#1747481626
 clear
-#1746730457
+#1747481627
 q
-#1746730459
-clear
-#1746730459
-q
-#1746731482
-clear
-#1746731482
-q
-#1746731487
-clear
-#1746731487
-q
-#1746731488
-clear
-#1746731489
-q
-#1746731493
-cdd
-#1746731494
-ls
-#1746731494
-r
-#1746736392
+#1747481631
 cd dots
-#1746736393
+#1747481631
 ls
-#1746736393
-r
-#1746737534
+#1747481663
+sudo cp disable_prochot.service /etc/systemd/system/
+#1747481674
+sudo systemctl enable disable_prochot.service 
+#1747481679
+sudo systemctl start disable_prochot.service 
+#1747481690
+sudo systemctl status ly
+#1747481696
+ins ly
+#1747481702
+sudo systemctl status ly
+#1747481713
+nvim dots
+#1747481735
+sudo systemctl enable ly
+#1747481742
+sudo reboot
+#1747481775
 q
-#1746732150
-cdw
-#1746732152
-cdd
-#1746732153
-sr
-#1746732159
-sr .
-#1746732165
-sr ./
-#1746732176
-cd ../dl/
-#1746732178
-sr
-#1746735890
+#1747481823
+sudo systemctl status disable_prochot
+#1747481836
+cd dots
+#1747481836
 ls
-#1746735893
-r
-#1746735909
-ls
-#1746735909
-r
-#1746735931
-ins virtualbox
-#1746735938
-rem virtualbox
-#1746735979
-ins virtualbox
-#1746736233
-cdw
-#1746736238
-new hypy
-#1746736244
-r
-#1746736246
-cd hypy
-#1746736247
-ls
-#1746736247
-r
-#1746736310
-gst
-#1746736317
-gca update boilerplate files!
-#1746736328
-r
-#1746736342
-gca update boilerplate files!
-#1746737535
-ls
-#1746737538
-nvim hypy
-#1746737542
-nvim hypy 
-#1746737719
-nvim packages
-#1746737741
-nvim disable_prochot.service
-#1746737749
-ls
-#1746737750
-gst
-#1746737769
-gca add hypy setup files!
-#1746737776
+#1747481838
+nvim HINT.md 
+#1747481844
+ins msr-tools
+#1747481847
+reboot
+#1747481878
 q
-#1746738353
-cdw
-#1746738355
-cd hypy/
-#1746738358
-nvim hypy 
-#1746738374
-r
-#1746738386
-cdw
-#1746738388
-cd hypy/
-#1746738389
-ls
-#1746738400
-gca add new simple hypy setup
-#1746738402
-r
-#1746738462
-gca add config directory
-#1746740587
-ls
-#1746740587
-r
-#1746743256
-nvim hyprland.conf
-#1746743261
-gst
-#1746743272
-gca update hypy!
-#1746743833
-r
-#1746743864
-gca update hypy!
-#1746744160
-q
-#1746744158
+#1747481877
 clear
-#1746744161
+#1747481878
+qq
+#1747481879
 q
-#1746744162
+#1747481880
 clear
-#1746744162
+#1747481880
 q
-                                #1746782832
-irc
-#1746782862
-grc
-#1746782872
-nvim .git-credentials 
-#1746815464
-space
-#1746815470
+#1747481887
+cd dots
+#1747481888
+ls
+#1747481889
+r
+#1747481904
+gst
+#1747481914
+gca add msr-tools for prochot to work!
+#1747481917
+ls
+#1747482316
+clear
+#1747482317
+q
+#1747482350
+cdw
+#1747482350
+ls
+#1747482351
+q
+#1747482367
+cd dots
+#1747482368
+ls
+#1747482369
+nvim dots
+#1747482666
+gst
+#1747482318
+cd dots
+#1747482319
+ls
+#1747482320
+cd
+#1747482321
+ls
+#1747482332
+git clone https://github.com/nemo256/music
+#1747482669
+q
+#1747482450
+git clone https://github.com/nemo256/vimy ${HOME}/.config/nvim/
+#1747482457
+cd .config/nvim/
+#1747482457
+ls
+#1747482461
+la
+#1747482462
+..
+#1747482466
+git clone https://github.com/nemo256/vimy ${HOME}/.config/nvim/
+#1747482584
+git clone --depth 1 https://github.com/wbthomason/packer.nvim .local/share/nvim/site/pack/packer/start/packer.nvim
+#1747482687
+rm .local/share/nvim/site/pack/packer/start/packer.nvim/
+#1747482690
+ls
+#1747482697
+rm .local/share/nvim/
+#1747482700
+clear
+#1747482701
+ls
+#1747482779
+cd dots
+#1747482779
+ls
+#1747482782
+nvim dots
+#1747482909
+gst
+#1747482913
+r
+#1747483122
+q
+git clone https://github.com/nemo256/dots
+nmtui
+clear
+ping google.com
+git clone https://github.com/nemo256/dots
+cd dots/
+ls
+cd ..
+ls
+ls -lah
+cd ..
+ls
+cd n3m0/
+ls
+cd dots/
+ls
+nvim packages 
+clear
+ls
+./dots
+sudo reboot
+#1747501049
+cd dots
+#1747501049
+ls
+#1747501062
+sudo cp disable_prochot.service /etc/systemd/system
+#1747501073
+sudo systemctl start disable_prochot.service 
+#1747501079
+sudo systemctl enable disable_prochot.service 
+#1747501080
+clear
+#1747501081
+ls
+#1747501083
+q
+#1747501088
+clear
+#1747501088
+q
+#1747501090
+clear
+#1747501090
+q
+#1747501093
+nmtui
+#1747501112
+clear
+#1747501112
+q
+#1747501126
+clear
+#1747501128
+qq
+#1747501128
+q
+#1747501136
+clear
+#1747501136
+q
+#1747501143
+r
+#1747501145
+q
+#1747501148
+ins docker
+#1747501174
+sudo systemctl enable docker
+#1747501179
+sudo systemctl start docker
+#1747501194
+sudo usermod -aG docker $USER
+#1747501200
+echo $USER
+#1747501206
+q
+#1747501302
+sudo systemctl stop disable_prochot
+#1747501303
+q
+#1747501790
+ls
+#1747501791
+r
+#1747501820
+..
+#1747501821
+ls
+#1747501831
+q
+#1747501903
 df -h /
-#1746815473
-r
-#1746815489
-space
-#1746815505
-rm void-live-x86_64-20250202-base.iso 
-#1746815507
-clear
-#1746815507
+#1747501906
 q
-#1746817041
+#1747502027
+ls
+#1747502033
+q
+#1747501248
+cdw
+#1747501249
+ls
+#1747501262
+clone https://github.com/nemo256/stp
+#1747501267
+..
+#1747501273
+clone https://github.com/nemo256/pix
+#1747501361
+clone https://github.com/nemo256/music
+#1747501623
+clone https://github.com/nemo256/dox
+#1747502110
+q
+#1747502314
+df -h /
+#1747502318
+q
+#1747502593
+cdw
+#1747502593
+ls
+#1747502599
+clone https://github.com/nemo256/stp-api
+#1747502626
+clone https://github.com/nemo256/stp-db
+#1747502632
+ls
+#1747502671
+c
+#1747502673
+q
+#1747503864
+cdw
+#1747503866
+cd stp
+#1747503867
+ls
+#1747503871
+make
+#1747504362
+q
+#1747501227
+docker pull gvenzl/oracle-xe
+#1747502460
+docker run -d --name oracle -p 1521:1521 -e ORACLE_PASSWORD=Oracle123 gvenzl/oracle-xe
+#1747502475
+docker logs -f oracle
+#1747502910
+docker stop oracle
+#1747502921
+docker start oracle
+#1747502925
+docker logs -f oracle
+#1747502969
+docker exec -it oracle sqlplus system/Oracle123@localhost/XEPDB1
+#1747503240
+docker cp work/stp-db/database/STP.sql oracle:/STP.sql
+#1747503263
+docker exec -it oracle sqlplus aslstp/aslstp@localhost/XEPDB1
+#1747503343
+docker exec -it oracle bash -c "echo exit | sqlplus aslstp/aslstp@localhost/XEPDB1 @/
+#1747503346
+docker exec -it oracle sqlplus aslstp/aslstp@localhost/XEPDB1
+#1747503658
+docker exec -it oracle sqlplus system/Oracle123@localhost/XEPDB1
+#1747503763
+docker exec -it oracle sqlplus aslstp/aslstp@localhost/XEPDB1
+#1747504116
+paru sqlcl
+#1747504152
+arem
+#1747504315
+brc
+#1747504365
+q
+#1747504367
+brc
+#1747504415
+q
+#1747504420
+sqlstp
+#1747504440
+htop
+#1747504447
+docker stop oracle
+#1747504460
+docker start oracle
+#1747504470
+sqlstp
+#1747504477
+q
+#1747504593
+cdw
+#1747504594
+q
+#1747504480
+cdq
+#1747504480
+cdw
+#1747504483
+cd stp-api
+#1747504484
+make
+#1747504487
+ins go
+#1747504522
+make
+#1747504598
+ls
+#1747504599
 r
-#1746817049
+#1747504653
+make
+#1747505191
+q
+#1747505194
+cdw
+#1747505196
+cd stp-api/
+#1747505198
+make clean
+#1747505199
+q
+#1747505211
+cd .build/tily/
+#1747505213
+gst
+#1747505216
+nvim config.h
+#1747505229
+make
+#1747505236
+sudo make clean install
+#1747505239
+q
+#1747504689
+sqlstp
+#1747504798
+lsblk
+#1747504809
+sudo mount /dev/sdc /mnt
+#1747504811
+cd /mnt
+#1747504812
+ls
+#1747504815
+r
+#1747504887
+sudo cp -fvr database/ ~/
+#1747504899
+cd
+#1747504907
+sudo umount /dev/sdc
+#1747504945
+r
+#1747504964
+gst
+#1747504966
+gst -u
+#1747504993
+gca add new database!
+#1747505016
+..
+#1747505018
+ls
+#1747505020
+cd ..
+#1747505021
+ls
+#1747505064
+docker cp work/stp-db/database/STP_ALL.sql work/stp-db/database/STP_TABLES.sql oracle:/
+#1747505079
+docker cp work/stp-db/database/STP_ALL.sql oracle:/STP_ALL.sql
+#1747505092
+docker cp work/stp-db/database/STP_TABLES.sql oracle:/STP_TABLES.sql
+#1747505100
+sqlstp
+#1747505524
+cw
+#1747505526
+cd
+#1747505527
+cw
+#1747505534
+q
+#1747505539
+cw
+#1747505541
+q
+#1747505561
+sqlstp
+#1747505630
+r
+#1747505666
+sqlstp
+#1747505885
+docker exec -it oracle sqlplus system/Oracle123@localhost/XEPDB1
+#1747505905
+sqlstp
+#1747505935
+q
+#1747505944
+cdw
+#1747505946
+cd stp
+#1747505948
+make
+#1747506022
+make clean
+#1747506024
+make stop
+#1747506032
+make clean
+#1747506032
+ls
+#1747506034
+q
+#1747505543
+cdw
+#1747505545
+cd stp-api
+#1747505545
+make
+#1747506036
+make clean
+#1747506037
+clear
+#1747506038
+q
+#1747506051
+cw
+#1747506052
+q
+#1747506067
+sudo nvim /etc/default/grub
+#1747506225
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+#1747506226
+q
+#1747506077
+cd dots
+#1747506077
+ls
+#1747506078
+r
+#1747506093
+clone https://github.com/nemo256/archy
+#1747506097
+cd archy/
+#1747506098
+ls
+#1747506099
+r
+#1747506738
+clear
+#1747506738
+q
+#1747506741
+htop
+#1747506747
+q
+#1747506776
+df -h /
+#1747506778
+q
+#1747506811
+docker start oracle
+#1747506812
+q
+#1747506825
+cd .build/tily/
+#1747506828
+nvim config.h
+#1747506834
+make
+#1747506839
+sudo make clean install
+#1747506800
+cd stp-api
+#1747506802
+cdw
+#1747506804
+cd stp-api/
+#1747506805
+make
+#1747506862
+make clean
+#1747506863
+q
+#1747506791
+cdw
+#1747506793
+cd stp
+#1747506795
+make
+#1747506866
+make sto
+#1747506868
+make stop
+#1747506871
+make clean
+#1747506871
+q
+#1747506877
+cd .build/
+#1747506878
+cd tily/
+#1747506879
+ls
+#1747506880
+gst
+#1747506888
+gca fix localhost link on chromium
+#1747506890
+q
+#1747506896
+cdw
+#1747506897
+cd stp
+#1747506898
+make
+#1747506915
+make clean
+#1747506916
+q
+#1747509423
+cdw
+#1747509425
+cd stp-api/
+#1747509426
+make
+#1747509431
+cdw
+#1747556043
+cd stp
+#1747556044
+clear
+#1747556044
+ls
+#1747556109
+clear
+#1747556109
+ls
+#1747556356
+q
+#1747556359
+cd dots
+#1747556359
+ls
+#1747556361
+cd config/
+#1747556361
+ls
+#1747556366
+rm nvim/
+#1747556367
+ls
+#1747556368
+r
+#1747556405
+git clone https://github.com/nemo256/vimy
+#1747556409
+ls
+#1747556409
+r
+#1747556511
+sudo rm database/
+#1747556516
+sudo rm -fvr database/
+#1747556517
+clear
+#1747556518
+ls
+#1747556518
+r
+#1747556526
+cd dots
+#1747556526
+ls
+#1747556527
+clear
+#1747556527
+ls
+#1747556941
+cd /usr/share/fonts/
+#1747556946
+curl -LO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
+#1747556951
+sudo curl -LO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
+#1747556976
+unzip FiraCode.zip
+#1747556978
+sudo unzip FiraCode.zip
+#1747556985
+fc-cache -fv
+#1747557008
+rem ttf-firacode-nerd
+#1747557010
+q
+#1747557019
+fc-list | grep "FiraCode Nerd Font"
+#1747509363
+cdw
+#1747509365
+ls
+#1747509369
+rm archy/
+#1747509370
+clear
+#1747509371
+ls
+#1747509378
+docker start oracle
+#1747509381
+clear
+#1747509382
+ls
+#1747509408
+clear
+#1747509408
+ls
+#1747509410
+cd stp
+#1747509411
+make
+#1747557113
+q
+#1747557123
+cd .build/
+#1747557125
+cd st/
+#1747557126
+ls
+#1747557170
+fc-list | grep "FiraCode Nerd Font"
+#1747557204
+ls
+#1747557207
+nvim config.h 
+#1747557411
+make
+#1747557418
+sudo make clean install
+#1747557430
+nvim config.h 
+#1747557440
+make
+#1747557553
+clear
+#1747557554
+ls
+#1747557696
+make
+#1747557699
+sudo make clean
+#1747557701
+sudo make clean install
+#1747557704
+q
+#1747559145
+docker start oracle
+#1747559146
+q
+#1747559178
+gst
+#1747559180
+cdw
+#1747559181
+cd stp
+#1747559182
+gst
+#1747559186
+git show
+#1747559206
+git diff
+#1747559208
+ls
+#1747559671
+make
+#1747559821
+q
+#1747557155
+ls /usr/share/fonts/ | grep fira
+#1747557157
+ls /usr/share/fonts/ | grep Fira
+#1747557218
+fc-list | grep "FiraCode Nerd Font"
+#1747559118
+cdw
+#1747559120
+cd stp-api
+#1747559122
+clear
+#1747559122
+ls
+#1747559123
+make
+#1747559246
+nvim internal/handlers/adherent.go 
+#1747559269
+make
+#1747559274
+nvim internal/handlers/adherent.go 
+#1747559828
+make
+#1747559833
+make stop
+#1747559834
+gst
+#1747559835
+gst -u
+#1747559836
+q
+#1747559301
+cdw
+#1747559304
+cd stp-api/
+#1747559305
+make
+#1747559840
+make clean
+#1747559841
+q
+#1747559843
+cdw
+#1747559845
+cd stp
+#1747559845
+ls
+#1747559851
+fc-list | grep -i "fira.*nerd"
+#1747559880
+echo -e "\uE0B0 \uE0B1 \uF013 \uE7C5 \uF121 \uE0A0 \uF2C7 \uF105 \uF101"
+#1747559922
+echo "-> => != =="  # Do they render as joined symbols?
+#1747559932
+printf '\u2500\u2502\u250C\u2510\u2514\u2518\n'
+#1747559988
+q
+#1747559995
+cd .build/
+#1747559996
+ls
+#1747559997
+cd fetchy/
+#1747559998
+ls
+#1747560001
+make
+#1747560003
+make all
+#1747560005
+ls
+#1747560009
+make build
+#1747560010
+r
+#1747560129
+make clean
+#1747560133
+make all
+#1747560136
+r
+#1747560327
+make all
+#1747560333
+make install
+#1747560337
+sudo make install
+#1747560354
+nvim src/config.h 
+#1747560401
+make all
+#1747560402
+make clean
+#1747560405
+sudo make clean
+#1747560410
+sudo make clean install
+#1747560412
+clear
+#1747560412
+ls
+#1747560418
+q
+#1747560423
+cd .build/
+#1747560423
+ls
+#1747560426
+cd fetchy/
+#1747560426
+ls
+#1747560428
+gst
+#1747560438
+cd src/config.h 
+#1747560442
+nvim src/config.h 
+#1747560450
+make all
+#1747560454
+sudo make clean install
+#1747560455
+gst
+#1747560466
+sudo make clean install
+#1747560467
+gst
+#1747560473
+gca update fetchy config!
+#1747560475
+q
+#1747560499
+brc
+#1747560569
+cd dots
+#1747560569
+ls
+#1747560570
+gst
+#1747560574
+q
+#1747560579
+cd dots
+#1747560579
+ls
+#1747560581
+gst
+#1747560591
+gca update bashrc PS1 prompt!
+#1747560596
+q
+#1747560621
+cd .build/
+#1747560628
+cd fetchy/
+#1747560641
+nvim src/config.h 
+#1747560651
+cd src/fetchy.c 
+#1747560654
+6c
+#1747560702
+brc
+#1747560727
+q
+#1747560728
+ls
+#1747560729
+as
+#1747560732
+q
+#1747560750
+clear
+#1747560750
+q
+#1747560753
+nvim
+#1747560756
+clear
+#1747560756
+ls
+#1747560765
+cd .build/fetchy/
+#1747560769
+nvim src/fetchy.c 
+#1747560792
+make
+#1747560796
+sudo make clean install
+#1747560797
+q
+#1747560807
+cd .build/fetchy/
+#1747560813
+nvim src/fetchy.c 
+#1747560824
+make
+#1747560827
+sudo make clean install
+#1747560828
+q
+#1747560840
+cd .build/fetchy/
+#1747560840
+ls
+#1747560860
+nvim src/fetchy.c 
+#1747560866
+nvim src/config.h 
+#1747560946
+make 
+#1747560950
+sudo make clean install
+#1747560978
+q
+#1747561022
+cd .build/src
+#1747561027
+cd .build/fetchy/
+#1747561027
+ls
+#1747561028
+gst
+#1747561032
+gca update fetchy config!
+#1747561034
+q
+#1747561140
+paru -S nerd-fonts-fira-code
+#1747561143
+q
+#1747561353
+echo -e "\uf4e4 \uf15b \uf46a \uf0b1 \uf61a"
+#1747561379
+q
+#1747561405
+nvim
+#1747561408
+q
+#1747561409
+sa
+#1747561411
+ks
+#1747561412
+ls
+#1747561413
+q
+#1747561415
+nvim
+#1747561418
+6c
+#1747561419
+6cs
+#1747561422
+clear
+#1747561423
+6cq
+#1747561596
+print("      ")
+#1747561601
+q
+#1747561624
+nvim
+#1747561750
+q
+#1747561759
+ls
+#1747561759
+q
+#1747561760
+lq
+#1747561761
+q
+#1747561783
+nvim
+#1747562254
+nvim --clean
+#1747562267
+q
+#1747562272
+nvim --clean
+#1747562277
+6cq
+#1747562419
+nvim 
+#1747562422
+6cc
+#1747562424
+c
+#1747562425
+q
+#1747562427
+nvim
+#1747562431
+q
+#1747561038
+cd .config/nvim/
+#1747561039
+ls
+#1747561039
+r
+#1747562452
+clear
+#1747562452
+q
+#1747562455
+cd .config/nvim/
+#1747562456
+ls
+#1747562457
+gst
+#1747562469
+gca update dashboard.nvim styles!
+#1747562522
+ls
+#1747562530
+mkdir session
+#1747562612
+clear
+#1747562613
+q
+#1747562617
+cd .config/nvim
+#1747562618
+ls
+#1747562619
+gst
+#1747562621
+gst -u
+#1747562621
+q
+#1747562623
+ls
+#1747562628
+cd .config/nvim/
+#1747562629
+ls
+#1747562630
+gst
+#1747562633
+gca 
+#1747562635
+q
+#1747562659
+cdw
+#1747562663
+cd stp-api
+#1747562664
+make
+#1747562667
+cdw
+#1747562668
+cd stp
+#1747562669
+ls
+#1747562644
+cdw
+#1747562646
+cd stp
+#1747562648
+ls
+#1747562648
+make
+#1747563181
+make clean
+#1747563184
+make stop
+#1747563186
+clear
+#1747563187
+ls
+#1747563242
+clear
+#1747563242
+q
+#1747563245
+cdw
+#1747563246
+cd stp
+#1747563248
+..
+#1747563251
+cd stp-api
+#1747563251
+ls
+#1747563254
+make stop
+#1747563258
+q
+#1747563262
+clear
+#1747563262
+q
+#1747563269
+docker stop oracle
+#1747563277
+q
+#1747563402
+sudo systemctl stop docker
+#1747563419
+sudo systemctl start docker
+#1747563420
+q
+#1747563671
+cd .build/fetchy/
+#1747563677
+cd src/config.h 
+#1747563681
+nvim src/config.h 
+#1747563695
+make
+#1747563697
+sudo make clean install
+#1747563704
+cd .build/
+#1747563705
+ls
+#1747563707
+cd fetchy/
+#1747563707
+ls
+#1747563708
+gst
+#1747563711
+gca update fetchy config!
+#1747563713
+q
+#1747563716
+qq
+#1747563716
+q
+#1747568458
+clear
+#1747568458
+q
+#1747568489
+cdw
+#1747568490
+cd stp
+#1747568501
+..
+#1747568505
+cd stp-api/
+#1747568505
+ls
+#1747568506
+make
+#1747568509
+cdw
+#1747568510
+cd stp
+#1747568510
+ls
+#1747568520
+docker start oracle
+#1747568521
+q
+#1747573483
+clear
+#1747573484
+q
+#1747573490
+cdw
+#1747573493
+cd stp-api
+#1747573495
+docker start oracle
+#1747573499
+make
+#1747573503
+cdw
+#1747573504
+cd stp
+#1747573506
+ls
+#1747579729
+gst
+#1747579795
+gca add ajouter une souche styles ! 
+#1747579800
+q
+#1747573487
+cdw
+#1747573488
+cd stp
+#1747573489
+make
+#1747580060
+q
+#1747580055
+docker stop oracle
+#1747580064
+cdw
+#1747580066
+cd stp
+#1747580068
+make stop
+#1747580070
+make clean
+#1747580071
+..
+#1747580076
+cd stp-api/
+#1747580080
+make clean
+#1747580081
+q
+#1747580477
+cdw
+#1747580478
+cd stp
+#1747580481
+..
+#1747580486
+cd stp-api/
+#1747580486
+s
+#1747580487
+ls
+#1747580488
+clear
+#1747580489
+ls
+#1747580490
+make
+#1747580613
+q
+#1747580466
+cdw
+#1747580467
+cd stp
+#1747580472
+docker start oracle
+#1747580475
+make
+#1747592652
+cdw
+#1747592655
+cd stp-api
+#1747592656
+r
+#1747580498
+cdw
+#1747580499
+cd stp
+#1747580500
+ls
+#1747591498
+docker stop oracle
+#1747591513
+docker start oracle
+#1747591539
+..
+#1747591543
+cd stp-api/
+#1747591544
+make
+#1747593816
+clear
+#1747593816
+q
+#1747656627
+cdw
+#1747656629
+cd stp-api
+#1747656635
+docker start oracle
+#1747656641
+make
+#1747659901
+nvim radia.txt
+#1747659922
+6cq
+#1747659926
+nvim radia.txt 
+#1747660198
+ls
+#1747660200
+6cls
+#1747660202
+6cq
+#1747660204
+ls
+#1747593818
+cdw
+#1747593819
+cd stp
+#1747593820
+make
+#1747656647
+cdw
+#1747656650
+cd stp
+#1747656650
+ls
+#1747656652
+..
+#1747656655
+cd stp-api
+#1747657076
+make
+#1747661524
+ake
+#1747661525
+make
+#1747664583
+make clean
+#1747664584
+gst
+#1747664586
+gst -u
+#1747664596
+gca update prscharge search - found new bug!
+#1747664603
+mak
+#1747664604
+make
+#1747666124
+clear
+#1747666124
+q
+#1747666233
+clear
+#1747666233
+q
+#1747666237
+clear
+#1747666237
+q
+#1747666242
+ls
+#1747666243
+q
+#1747666342
+ls
+#1747666343
+c
+#1747666343
+q
+#1747730439
+man g++
+#1747730477
+g++ --help
+#1747730485
+q
+#1747730391
+cdw
+#1747730392
+ls
+#1747730397
+mkdir snake
+#1747730399
+cd snake
+#1747730400
+ls
+#1747730406
+touch snake.cpp
+#1747730413
+nvim snake.cpp 
+#1747730426
+ls
+#1747730491
+g++ snake.cpp -o snake
+#1747730550
+nvim snake.cpp 
+#1747730557
+g++ snake.cpp -o snake
+#1747730576
+ins ncurses
+#1747730590
+g++ snake.cpp -lncurses -o snake
+#1747730594
+ls
+#1747730602
+./snake 
+#1747730768
+nvim snake.cpp
+#1747730853
+g++ snake.cpp -lncurses -o snake
+#1747730856
+./snake 
+#1747730864
+q
+#1747729500
+cdw
+#1747729504
+cd stp
+#1747729508
+make
+#1747729762
+ls
+#1747729763
+gst
+#1747729765
+gst -u
+#1747729771
+git log
+#1747729783
+make
+#1747730865
+cdw
+#1747730867
+cd snake/
+#1747730870
+./snake 
+#1747734217
+docker start oracle
+#1747734226
+cdw
+#1747734227
+cd stp-api
+#1747734229
+make
+#1747734173
+cdw
+#1747734213
+cd stp
+#1747734213
+ls
+#1747734214
+make
+#1747734246
+cdw
+#1747734247
+cd stp
+#1747734247
+ls
+#1747746133
+clear
+#1747746134
+q
+#1747746146
+clear
+#1747746147
+q
+#1747746166
+cdw
+#1747746168
+cd stp-api
+#1747746169
+make
+#1747746172
+cdw
+#1747746172
+cd stp
+#1747746173
+ls
+#1747752116
+clear
+#1747752116
+q
+#1747746155
+docker start oracle
+#1747746159
+cdw
+#1747746160
+cd stp
+#1747746160
+ls
+#1747746162
+make
+#1747812897
+clear
+#1747812897
+q
+#1747812906
+docker start oracle
+#1747812919
+cdw
+#1747812921
+cd stp-api
+#1747812925
+make
+#1747812902
+cdw
+#1747812902
+cd stp
+#1747812903
+make
+#1747815135
+cdw
+#1747815136
+cd stp
+#1747815137
+ls
+#1747816478
+gst
+#1747816479
+gst -u
+#1747824355
+ls
+#1747824367
+links
+#1747824471
+exit
+#1747824630
+meme
+#1747824593
+meme
+#1747824627
+startx
+#1747900065
+clear
+#1747900065
+q
+#1747900074
+docker start oracle
+#1747900086
+cdw
+#1747900089
+cd stp-api
+#1747900090
+ls
+#1747900090
+make
+#1747901016
+cdw
+#1747901017
+cd stp
+#1747901018
+ls
+#1747901019
+gst
+#1747901023
+r
+#1747900066
+cdw
+#1747900067
+cd stp
+#1747900068
+make
+#1747902328
+df -h /
+#1747902331
+q
+#1748012015
+lsblk
+#1748012029
+sudo mount /dev/sdc1 /mnt
+#1748012032
+cd /mnt/
+#1748012033
+ls
+#1748012036
+r
+#1748012047
+cd
+#1748012056
+sudo mkfs.fat -F32 -I /dev/sdc
+#1748012061
+sudo umount /mnt
+#1748012063
+sudo mkfs.fat -F32 -I /dev/sdc
+#1748012094
+cd
+#1748012094
+cdd
+#1748012095
+ls
+#1748012095
+r
+#1748012101
+links
+#1748012200
+q
+#1748012209
+cdd
+#1748012210
+wget https://deac-fra.dl.sourceforge.net/project/clonezilla/clonezilla_live_stable/3.2.2-5/clonezilla-live-3.2.2-5-amd64.iso?viasf=1
+#1748012848
+lsblk
+#1748013150
+ls
+#1748013204
+cdw
+#1748013204
+ls
+#1748013205
+r
+#1748013236
+q
+#1748013289
+cdd
+#1748013290
+ls
+#1748013311
+sudo dd bs=4M if=./clonezilla-live-3.2.2-5-amd64.iso of=/dev/sdc status=progress oflag=sync
+#1748013422
+ls
+#1748013442
+cd
+#1748013443
+q
+#1748013446
+reboot
+#1748015727
+lsblk
+#1748016598
+space
+#1748016644
+q
+#1748015709
+cdd
+#1748015710
+ls
+#1748015732
+sudo dd bs=4M if=./clonezilla-live-3.2.2-5-amd64.iso of=/dev/sdc status=progress conv=fsync
+#1748015888
+sudo eject /dev/sdc
+#1748015899
+sudo mount /dev/sdc /mnt
+#1748015913
+cd /mnt
+#1748015913
+ls
+#1748015917
+cd
+#1748016055
+cdd
+#1748016055
+ls
+#1748016057
+rm clonezilla-live-3.2.2-5-amd64.iso 
+#1748016057
+ls
+#1748016287
+lsblk
+#1748016295
+sudo umount /mnt
+#1748016300
+sudo mkfs.fat -F32 -I /dev/sdc
+#1748016305
+lsblk
+#1748016518
+sudo mkfs.fat -F32 -I /dev/sdc
+#1748016526
+sudo dd bs=4M if=./clonezilla-live-3.2.2-5-amd64.iso of=/dev/sdc status=progress conv=fsync
+#1748016682
+sudo eject /dev/sdc
+#1748016685
+lsblk
+#1748016701
+rm clonezilla-live-3.2.2-5-amd64.iso 
+#1748016702
+ls
+#1748016702
+r
+#1748016720
+space
+#1748016726
+cdD
+#1748016727
+gst
+#1748016729
+gst -u
+#1748016733
+..
+#1748016735
+rm dox/
+#1748016737
+q
+#1748016742
+space
+#1748016750
+rm music/
+#1748016751
+ls
+#1748016755
+clear
+#1748016755
+ls
+#1748016756
+q
+#1748016757
+space
+#1748016760
+df -h /
+#1748016762
+q
+#1748031378
+cdd
+#1748031379
+ls
+#1748031380
+q
+#1748031381
+ls
+#1748031381
+q
+#1748031382
+ls
+#1748031384
+q
+#1748031390
+cdw
+#1748031391
+q
+#1748031405
+lsblk
+#1748031412
+ls
+#1748031414
+lsblk
+#1748031415
+clear
+#1748031417
+lsblk
+#1748031426
+sudo eject /dev/sdb
+#1748031436
+clear
+#1748031436
+q
+#1748031447
+cd dots
+#1748031448
+ls
+#1748031449
+gst
+#1748031452
+gst -
+#1748031554
+gst -u
+#1748031571
+cd .build/
+#1748031586
+cd tily
+#1748031600
+nvim config.h
+#1748031768
+cdw 
+#1748031770
+cd 
+#1748031778
+cd .build/tily/
+#1748031781
+make
+#1748031811
+sudo make clean install
+#1748031816
+clear
+#1748031817
+q
+#1748031825
+cd .build/tily/
+#1748031829
+gca update links
+#1748031833
+q
+#1748031855
+cd .dots
+#1748031855
+ls
+#1748031858
+cd dots
+#1748031858
+ls
+#1748031863
+cd
+#1748031867
+cd .config/links
+#1748031871
+la
+#1748031880
+cd .links/
+#1748031880
+ls
+#1748031882
+r
+#1748073807
+df -h /
+#1748073809
+q
+#1748073775
+ins virtualbox
+#1748073937
+cdw
+#1748073945
+git clone https://github.com/nemo256/vivy
+#1748073986
+git clone https://github.com/nemo256/vyvy
+#1748073995
+ins virtualbox
+#1748074014
+upd
+#1748074038
+ins virtualbox
+#1748074536
+upd
+#1748074774
+ins virtualbox
+#1748074875
+cd vyvy/
+#1748074875
+ls
+#1748074876
+r
+#1748074920
+clear
+#1748074920
+q
+#1748074937
+cd .config/picom/
+#1748074938
+ls
+#1748074941
+nvim picom.conf 
+#1748075076
+clear
+#1748075076
 q

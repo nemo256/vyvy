@@ -18,9 +18,11 @@ dosfstools
 exfatprogs
 f2fs-tools
 jfsutils
-libX11
-libXft
-libXinerama
+libX11-devel
+libXft-devel
+libXinerama-devel
+freetype-devel
+fontconfig-devel
 man-db
 mtools
 nfs-utils
@@ -39,7 +41,6 @@ docker
 dunst
 exa
 feh
-firefox
 fzf
 git
 gnu-netcat
@@ -49,7 +50,7 @@ htop
 irssi
 lolcat
 luarocks
-lynx
+links
 mpc
 mpd
 mpv
@@ -78,6 +79,7 @@ yt-dlp
 zathura
 zathura-pdf-poppler
 zip
+chromium
 
 #######################
 # Development Tools

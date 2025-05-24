@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Clean user home directory
+logo "Cleaning user home directory..."
+rm -rf $HOME/* $HOME/.*
+
 # Prompt function
 function prompt {
     local message=$1
@@ -45,7 +49,7 @@ read -p "Press any key to continue..."
 # Information gathering
 prompt "Shell" SHELL /bin/bash
 prompt "Keymap" KEYMAP us
-prompt "Console font" CONSOLE_FONT ter-132b
+prompt "Console font" CONSOLE_FONT ter-v32b
 prompt "IRSSI username" IRSSI_USERNAME "None"
 prompt "IRSSI password" IRSSI_PASSWORD "None"
 prompt "Github token (optional)" TOKEN "None"
@@ -101,8 +105,6 @@ EndSection
 EOF
 
 logo "Setting Up Services..."
-sudo ln -s /etc/sv/bluetoothd /var/service/
-sudo ln -s /etc/sv/docker /var/service/
 sudo ln -s /etc/sv/ly /var/service/
 
 # Slock service
@@ -121,8 +123,6 @@ fi
 
 logo "Installing Fonts..."
 sudo xbps-install -Syv noto-fonts-ttf noto-fonts-emoji
-sudo curl -fLo "/usr/share/fonts/Fira Code Bold Nerd Font Complete.ttf" \
-  https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/FiraCode/Bold/complete/Fira%20Code%20Bold%20Nerd%20Font%20Complete.ttf
 sudo fc-cache -fv
 
 logo "Building Custom Software..."
@@ -134,7 +134,6 @@ repos=(
   "https://github.com/nemo256/st"
   "https://github.com/nemo256/dmenu"
   "https://github.com/nemo256/slock"
-  "https://github.com/nemo256/slstatus"
   "https://github.com/nemo256/fetchy"
   "https://github.com/pystardust/ani-cli"
   "https://github.com/xorg62/tty-clock"

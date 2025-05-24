@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-# Clean user home directory
-logo "Cleaning user home directory..."
-rm -rf $HOME/* $HOME/.*
+logo "Cleaning user home directory (preserving vyvy directory)..."
+find $HOME -maxdepth 1 -not -path "$HOME" -not -path "$HOME/vyvy" -exec rm -rf {} +
 
-# Prompt function
 function prompt {
     local message=$1
     local variable=$2
@@ -15,12 +13,9 @@ function prompt {
     eval $variable=${value:-$default}
 }
 
-# VYVY logo with colors
 function logo() {
     local text=$1
     local screen_width=$(tput cols)
-    
-    # VYVY ASCII Art
     local vyvy_art="
 ██╗   ██╗██╗   ██╗██╗   ██╗██╗   ██╗
 ╚██╗ ██╔╝╚██╗ ██╔╝╚██╗ ██╔╝╚██╗ ██╔╝
@@ -29,20 +24,17 @@ function logo() {
    ██║      ██║      ██║      ██║   
    ╚═╝      ╚═╝      ╚═╝      ╚═╝   
 "
-    # Get the width of the longest line in the ASCII art
     local logo_width=$(echo "$vyvy_art" | awk '{ if (length > max) max = length } END { print max }')
 
     clear
-    tput setaf 2  # Void Linux green
+    tput setaf 2
     printf "\n"
     while IFS= read -r line; do
-        # Calculate padding for centering
         local padding=$(( ($screen_width - ${#line}) / 2 ))
         printf "%${padding}s%s\n" "" "$line"
     done <<< "$vyvy_art"
     
-    tput setaf 5  # Magenta for text
-    # Center the message text
+    tput setaf 5
     printf "\n%*s\n\n" $((($screen_width + ${#text}) / 2)) "$text"
     tput sgr0
 }
@@ -50,7 +42,6 @@ function logo() {
 logo "VYVY Void Linux Configuration System"
 read -p "Press any key to continue..."
 
-# Information gathering
 prompt "Shell" SHELL /bin/bash
 prompt "Keymap" KEYMAP us
 prompt "Console font" CONSOLE_FONT ter-v32b
@@ -80,14 +71,12 @@ echo -e "KEYMAP=\"$KEYMAP\"\nFONT=\"$CONSOLE_FONT\"" | sudo tee /etc/vconsole.co
 echo "${USER} ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/10-nopasswd
 
 logo "Configuring Hardware..."
-# USB sound notifications
 sudo tee /etc/udev/rules.d/99-usb-sound.rules >/dev/null <<EOF
 KERNEL=="sd*", SUBSYSTEM=="block", ENV{DEVTYPE}=="partition", ACTION=="add", ENV{ID_FS_TYPE}!="vfat", RUN+="/bin/aplay $HOME/bin/sound/yamete.wav"
 KERNEL=="sd*", SUBSYSTEM=="block", ENV{DEVTYPE}=="partition", ACTION=="remove", ENV{ID_FS_TYPE}!="vfat", RUN+="/bin/aplay $HOME/bin/sound/ahh.wav"
 EOF
 sudo udevadm control --reload-rules
 
-# Intel graphics configuration
 sudo tee /etc/X11/xorg.conf.d/20-intel.conf >/dev/null <<EOF
 Section "Device"
   Identifier "Intel Graphics"
@@ -96,7 +85,6 @@ Section "Device"
 EndSection
 EOF
 
-# Touchpad configuration
 sudo tee /etc/X11/xorg.conf.d/40-libinput.conf >/dev/null <<EOF
 Section "InputClass"
     Identifier "libinput touchpad"
@@ -111,7 +99,6 @@ EOF
 logo "Setting Up Services..."
 sudo ln -s /etc/sv/ly /var/service/
 
-# Slock service
 sudo tee /etc/sv/slock/run <<EOF
 #!/bin/sh
 exec slock
@@ -138,7 +125,6 @@ repos=(
   "https://github.com/nemo256/st"
   "https://github.com/nemo256/dmenu"
   "https://github.com/nemo256/slock"
-  "https://github.com/nemo256/slstatus"
   "https://github.com/nemo256/fetchy"
   "https://github.com/pystardust/ani-cli"
   "https://github.com/xorg62/tty-clock"

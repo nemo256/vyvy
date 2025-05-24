@@ -36,6 +36,7 @@ usbutils
 #######################
 # User Applications
 #######################
+chromium
 cmatrix
 docker
 dunst
@@ -60,27 +61,23 @@ nodejs
 noto-fonts-ttf
 noto-fonts-cjk
 picom
-ranger
 rsync
 scrot
 stow
 sxiv
 terminus-font
 the_silver_searcher
-tmux
 transmission
 tree
 unclutter
 unrar
 unzip
-upower
 wget
 xclip
 yt-dlp
 zathura
 zathura-pdf-poppler
 zip
-chromium
 
 #######################
 # Development Tools

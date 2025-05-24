@@ -139,6 +139,26 @@ for repo in "${repos[@]}"; do
   cd ..
 done
 
+logo "Stowing configuration files..."
+programs=$(find "$HOME/vyvy/config" -maxdepth 1 -mindepth 1 -type d -printf "%f\n")
+for program in ${programs}; do
+  if [[ ${program} != "irssi" ]]; then
+    stow -v -d $HOME/vyvy/config -t $HOME ${program}
+  fi
+done
+
+logo "Irssi configuration..."
+if [[ -d "$HOME/vyvy/config/irssi/.irssi" ]]; then
+  cp -r $HOME/vyvy/config/irssi/.irssi $HOME/
+  if [[ "$IRSSI_USERNAME" != "None" ]]; then
+    sed -i "s/sasl_username = \".*\"/sasl_username = \"$IRSSI_USERNAME\"/" "$HOME/.irssi/config"
+    sed -i "s/nick = \".*\"/nick = \"$IRSSI_USERNAME\"/" "$HOME/.irssi/config"
+  fi
+  if [[ "$IRSSI_PASSWORD" != "None" ]]; then
+    sed -i "s/sasl_password = \".*\"/sasl_password = \"$IRSSI_PASSWORD\"/" "$HOME/.irssi/config"
+  fi
+fi
+
 logo "Configuring Neovim..."
 git clone https://github.com/nemo256/vimy $HOME/.config/nvim
 

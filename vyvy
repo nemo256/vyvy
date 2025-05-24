@@ -29,16 +29,20 @@ function logo() {
    ██║      ██║      ██║      ██║   
    ╚═╝      ╚═╝      ╚═╝      ╚═╝   
 "
+    # Get the width of the longest line in the ASCII art
     local logo_width=$(echo "$vyvy_art" | awk '{ if (length > max) max = length } END { print max }')
 
     clear
-    tput setaf 6  # Cyan
+    tput setaf 2  # Void Linux green
     printf "\n"
     while IFS= read -r line; do
-        printf "%*s\n" $((($screen_width + ${#line}) / 2)) "$line"
+        # Calculate padding for centering
+        local padding=$(( ($screen_width - ${#line}) / 2 ))
+        printf "%${padding}s%s\n" "" "$line"
     done <<< "$vyvy_art"
     
-    tput setaf 5  # Magenta
+    tput setaf 5  # Magenta for text
+    # Center the message text
     printf "\n%*s\n\n" $((($screen_width + ${#text}) / 2)) "$text"
     tput sgr0
 }
@@ -134,6 +138,7 @@ repos=(
   "https://github.com/nemo256/st"
   "https://github.com/nemo256/dmenu"
   "https://github.com/nemo256/slock"
+  "https://github.com/nemo256/slstatus"
   "https://github.com/nemo256/fetchy"
   "https://github.com/pystardust/ani-cli"
   "https://github.com/xorg62/tty-clock"

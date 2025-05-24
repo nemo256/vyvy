@@ -140,9 +140,14 @@ for repo in "${repos[@]}"; do
 done
 
 logo "Stowing configuration files..."
-programs=$(find "$HOME/vyvy/config" -maxdepth 1 -mindepth 1 -type d -printf "%f\n")
+if [[ ! -d "$HOME/vyvy/config" ]]; then
+  logo "Error: config directory not found in $HOME/vyvy!"
+  exit 1
+fi
+programs=$(find "$HOME/vyvy/config" -maxdepth 1 -mindepth 1 -type d -name ".*" -o -type d -printf "%f\n")
 for program in ${programs}; do
   if [[ ${program} != "irssi" ]]; then
+    logo "Stowing ${program}..."
     stow -v -d $HOME/vyvy/config -t $HOME ${program}
   fi
 done
